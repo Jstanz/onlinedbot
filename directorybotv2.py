@@ -232,7 +232,7 @@ html_tags = {
 def google(q):
     s = requests.Session()
     q = '+'.join(q.split())
-    url = 'https://www.google.com.sg/search?q=' + q + '&ie=utf-8&oe=utf-8'
+    url = 'https://www.google.com.sg/search?q=' + q + '&ie=utf-8&oe=utf-8&gl=sg'
     r = s.get(url, headers=headers_Get)
     return r.text
 
